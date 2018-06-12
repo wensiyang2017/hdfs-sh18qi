@@ -41,7 +41,7 @@ public class HdfsClientDemo {
     @Test
     public void testAddFileToHdfs() throws Exception {
         Path src = new Path("C:/Users/admin/Desktop/python/hive1.sql");
-        Path dst = new Path("/data/hdfs");
+        Path dst = new Path("/hdfs");
         fs.copyFromLocalFile(src, dst);
         fs.close();
     }
